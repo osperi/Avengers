@@ -6,25 +6,26 @@
 </head>
 
 <body>	
-	<!-- Logo en la cabecera -->
-	<figure>
-		<img src="../images/logo.PNG" width="180" height="70" alt="Imagen del logo en el que pone Simple Blooog UI!">			
-	</figure>
-
-	<h1>Detalle</h1>
 	<!-- Menú principal -->
-	<header>
+	<header id="detailHeader">
+		<!-- Logo en la cabecera -->
+		<figure>
+			<img src="../images/logo_mini.png" alt="Logo Simple Blooog">				
+		</figure>
+
 		<nav>
-			<a href="#">Mi Perfil</a> <!-- Enlace Real -->
+			<a href="/html/perfil.html">Mi Perfil</a> <!-- Enlace Real -->
 			<a href="#">Añadir Artículo</a>
 			<a href="#">Añadir Imagen</a>
 			<a href="#">Juegos</a>
 			<a href="#">Chat</a>
-			<a href="#">Contacto</a>
+			<a href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto">Contacto</a>
 		</nav>
 	</header>
-		
-	<section>		
+	
+	<main id="detailContent">
+		<section id="top6articles">
+        	<h2> Top 6 artículos </h2>
 		<!--
 		- Cabecera con logo
 		- Menú principal
@@ -38,33 +39,37 @@
 		- Pie
 		-->
 
-		<article>
-			<h2>Análisis del Dolor</h2>
-			<figure>
-				<img src="../images/fotoArticulo.PNG" alt="Imagen del protagonista del artículo">			
-			</figure>
-
+			<article>
+				<figure>
+					<img src="../images/art5detail.png"  alt="Imagen del protagonista del artículo">			
+				</figure>
 		
-			<aside>
-				<p>Categoría: </p>
-				<p>Fecha y Autor: </p>
-		 	</aside>	
+				<aside>				
+		        	<nav id="art5category"> <a href="category4" title="Categoría 4">CAT 4</a> | <a href="topic11" title="Tema 11">Tema 11</a> </nav>
+                	<p id="art5dateAuthor"> <time datetime="2016-06-18">18 de Junio de 2016</time>, por Natasha Romanoff </p>
+     	 		</aside>	
 		
+				<!-- Texto artículo -->
+				<h3>Viuda Negra</h3>
 
-			<!-- Texto artículo -->
-			<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Natasha es descendiente de los zares rusos. Cuando era una niña fue encontrada por el soldado Ivan Petrovich, quien la cuidó hasta que llegó a la edad adulta. Natasha se convirtió en una famosa bailarina en la Unión Soviética y, más tarde, se casó con Alexi Shostakov. La KGB vio en la pareja una buena posibilidad de tener dos buenos agentes y, mientras Alexi estaba en un viaje de gobierno, se le informó de los planes que el gobierno tenía para él. También se le prohibió tener cualquier tipo de contacto con conocidos, a los cuales se les dijo que este había muerto en una explosión. Tal como el gobierno había anticipado, Natasha quiso hacer algo para honrar la memoria de su esposo; por lo cual fue reclutada para convertirse en espía.</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan ex non lacus bibendum, eu iaculis magna accumsan. Nullam placerat, risus sit amet lobortis aliquam, odio lorem aliquet mauris, volutpat euismod quam lorem sed nisl. Cras arcu ipsum, varius ac turpis ac, facilisis cursus mi. In purus lectus, varius a nisl a, gravida sollicitudin neque. Aliquam at mollis est, sed mollis elit. Phasellus blandit urna turpis, vel eleifend ligula aliquet eget. Integer sem eros, vestibulum ut massa vel, luctus blandit massa.
+				<p>Las primeras misiones de Natasha fueron las de infiltrase en las Industrias Stark, pero sus planes fueron repetidamente frustrados por Iron Man. Para su cuarta misión se le dio el alias de la Viuda Negra y ésta buscó el apoyo de otro criminal, Ojo de Halcón, quien se enamoró de ella.</p>
 
-			Sed in sollicitudin ligula. Cras eu euismod mi, sed suscipit ex. Cras porttitor tortor nunc. Vestibulum sodales tortor malesuada, faucibus nunc sit amet, tempus elit. Proin a risus gravida, interdum nunc eu, elementum nulla. Etiam accumsan augue eget mi venenatis accumsan vel ac tortor. Aliquam erat volutpat. Aenean pretium turpis at ante ultricies, vel mattis neque commodo. Phasellus pretium risus dui, a elementum libero mattis non.</p>
-		</article>
-	</section>
+				<p>La Viuda Negra fue secuestrada por agentes de inteligencia chinos, quienes la hipnotizaron y la usaron para atacar a Los Vengadores. Natasha finalmente se liberó del control chino y, tras reunirse con Ojo de Halcón, le reveló su verdadera identidad y ofreció sus servicios a S.H.I.E.L.D.; pues desde que se había enamorado de ella, había dudado en dar su apoyo a los rusos y supo que no funcionaría esta relación.</p>
+
+				<p>La Viuda Negra se volvió miembro de Los Vengadores y llegó a convertirse en la líder del equipo. Luego de esto conoció a James Buchanan Barnes (Bucky) e inicio una relación amorosa con él.</p>
+			</article>
+		</section>
+	</main>
 	
-<footer>
-	<nav>
-		<a href="main.html">Inicio</a>  <a href="#">Ayuda</a> <a href="#">Contacto</a>		
-	</nav>
-</footer>
+	<footer id="detailFooter">
+		<nav>
+			<a href="../html/main.html">Inicio</a>  
+			<a href="#">Ayuda</a> 
+			<a href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto	</a>		
+		</nav>
+	</footer>
     
 </body>
 
