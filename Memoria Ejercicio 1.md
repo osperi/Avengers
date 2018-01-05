@@ -26,25 +26,25 @@ y una parte común que sería el footer, también común para las tres páginas.
 Se han utilizado las etiquetas siguientes:
 
 `<header>`
-		- En esta parte irá incluida la imagen del logo
+		- En esta parte irá incluida la imagen del logo, es algo general y común y por ese motivo irá englobada en esta tag.
 
 `<nav>`
-		- Donde se colocan los enlaces de navegación principales para moverse en el blog
+		- Donde se colocan los enlaces de navegación principales para moverse en el blog (Mi perfil, Añadir artículo, Añadir imagen, Juegos, Chat, Contacto). La propia definición de esta tag indica la necesidad de su uso. 		
 
 `<main>`
-		- Que engloba la parte principal dentro del cuerpo del html
+		- Necesario para englobar la parte principal dentro del cuerpo del html.
 
 `<section>`
-		- Para organizar y limitar el contenido principal, en este caso, al tratarse de un artículo, el título del mismo y el propio artículo
+		- Para organizar y limitar el contenido principal, en este caso, al tratarse de un artículo, el título del mismo y el propio artículo.
 
 `<article>`
-		- Donde se especifica la información concreta del artículo
+		- Donde se especifica la información concreta del artículo.
 
 `<aside>`
-		- Que contiene información muy específica del artículo
+		- Que contiene información muy específica del artículo. 
 
 `<footer>`
-		- Parte común con los enlaces de navegación
+		- Parte común, también a todo el blog, situada en la parte inferior de la página con otros enlaces de navegación (Inicio, Ayuda, Contacto).
 
 ---
 ## Etiquetas usadas por página de formulario de contacto
