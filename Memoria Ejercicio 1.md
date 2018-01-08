@@ -10,11 +10,9 @@ __Oscar Pérez Riaño__
 ---
 ## Análisis del diseño
 El análisis nos lleva a ver 3 partes bien diferenciadas en el diseño del blog, son las siguientes:
-- Se tiene una parte, que podemos llamar principal, la página de inicio, que será la que se muestra al usuario y da una visión y un resume general de lo que contiene el blog. Un conjunto de artículos con información resumida de los mismos.
+- Se tiene una parte, que podemos llamar principal, la página de inicio, que será la que se muestra al usuario y da una visión y un resumen general de lo que contiene el blog. Un conjunto de artículos con información resumida de los mismos.
 - Hay otra parte más específica donde se puede acceder a la información de un artículo en concreto.
 - Finalmente un formulario de contacto con los datos necesarios de la persona propietaria del blog y que publica en él.
-
-Y con ello a continuación detallamos las etiquetas diferenciadas en
 
 ---
 ## Bloques identificados
@@ -88,12 +86,20 @@ Para la página `detail.html` se han utilizado por su caracter semántico las si
 
 `<section>`
 		 - Para organizar y limitar el contenido principal, en este caso, al tratarse de un artículo, el título del mismo y el propio artículo.
+- `<h4>`
+Contiene el título de la sección.
 
-`<article>`
-		- Donde se especifica la información concreta del artículo.
-
-`<aside>`
-		- Que contiene información muy específica del artículo.
+- `<article>`
+ Usada para especificar la información concreta del artículo.
+	- `<header>` 
+	Contiene información muy específica del artículo.
+		- `<figure>`
+		Esta etiqueta se usa para incluir del artículo
+		- `<aside>`
+		Dentro de esta etiqueta se engloba la categoría, tema, fecha de publicación y autoría del artículo.
+		
+	- `<h2>` Contiene el título del artículo.
+	- `<p>` Aquí se incluye el artículo.
 
 `<footer>`
 		- Usada para contener la parte común del píe de página.
