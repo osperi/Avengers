@@ -1,5 +1,16 @@
 # Avengers
-Practicas curso Fullstack USAL
+Prácticas entregables para el Módulo II del curso de FullStack: HTML5 y CSS Avanzado
 
 - Ejercicio Tema 1: HTML semántico y formularios
-Contenido en el directorio html
+  - Estado: [Entregado](https://github.com/osperi/Avengers/releases/tag/AVENGERS_HTML_V1_0)
+
+- Ejercicio Tema 2: CSS3
+  - Estado: En desarrollo...
+
+- Ejercicio Tema 3: HTML5 - Javascript API
+  - Estado: Pendiente
+
+# Equipo:
+ - Raquel Rodríguez Hernández [[@raquelrh](https://github.com/raquelrh)]
+ - Héctor Rodríguez Iglesias [[@hectorri](https://github.com/hectorri)]
+ - Oscar Pérez Riaño [[@osperi](https://github.com/osperi)]
