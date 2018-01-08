@@ -1,6 +1,8 @@
 /*
-	Flex para la cabecera
+	Flex para la cabecera y el pie
 */
+
+/* Menú navegación Header */
 
 .header{
 	display: flex;		
@@ -27,7 +29,8 @@
 }
 
 
-/*Footer Común*/
+/*Menú Navegación Footer */
+
 .footer{
 	display: flex;		
 	flex-direction: row;
