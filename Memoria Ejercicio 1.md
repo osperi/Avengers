@@ -75,19 +75,19 @@ Contiene el parrafo de resumen del artículo.
 ## Etiquetas usadas por la página de detalle
 #### Responsable principal Raquel Rodríguez Hernández
 
-Se han utilizado las etiquetas siguientes:
+Para la página `detail.html` se han utilizado por su caracter semántico las siguientes etiquetas:
 
 `<header>`
-		- En esta parte irá incluida la imagen del logo, es algo general y común y por ese motivo irá englobada en esta tag.
+		- Usada para contener la parte común compuesta del logo del blog y de la sección del menú de navegación.
 
 `<nav>`
-		- Donde se colocan los enlaces de navegación principales para moverse en el blog (Mi perfil, Añadir artículo, Añadir imagen, Juegos, Chat, Contacto). La propia definición de esta tag indica la necesidad de su uso.
+		- Usada para albergar los enlaces del menú que habilita la navegación princiapl entre las páginas del blog.
 
 `<main>`
-		- Necesario para englobar la parte principal dentro del cuerpo del html.
+		- Usada para englobar el contenido principal de la página.
 
 `<section>`
-		- Para organizar y limitar el contenido principal, en este caso, al tratarse de un artículo, el título del mismo y el propio artículo.
+		 - Para organizar y limitar el contenido principal, en este caso, al tratarse de un artículo, el título del mismo y el propio artículo.
 
 `<article>`
 		- Donde se especifica la información concreta del artículo.
@@ -96,8 +96,44 @@ Se han utilizado las etiquetas siguientes:
 		- Que contiene información muy específica del artículo.
 
 `<footer>`
-		- Parte común, también a todo el blog, situada en la parte inferior de la página con otros enlaces de navegación (Inicio, Ayuda, Contacto).
+		- Usada para contener la parte común del píe de página.
+
+`<nav>`
+		- Usada nuevamente para albergar los enlaces de navegación del píe de página del blog.
 
 ---
 ## Etiquetas usadas por la página de formulario de contacto
 #### Responsable principal Héctor Rodríguez Iglesias
+
+Para la página `profile.html` se han utilizado por su caracter semántico las siguientes etiquetas:
+
+`<header>`
+		- Usada para contener la parte común compuesta del logo del blog y de la sección del menú de navegación.
+
+`<nav>`
+		- Usada para albergar los enlaces del menú que habilita la navegación princiapl entre las páginas del blog.
+
+`<main>`
+		- Usada para englobar el contenido principal de la página.
+
+`<section>`
+		- Para organizar y limitar el contenido del formulario de datos de perfil
+
+`<h3>`
+		- Título de la sección mencionada en la etiqueta.
+		
+`<form>`
+		- Representa y engloba los elementos del formulario. Cada uno de ellos definido por:
+
+- `<p>`
+Contiene un elemento del formulario. Esta etiqueta será sustituida por la etiqueta `<div>` en la próxima iteración del ejercicio para su integración con estilos css.
+
+- `<input>`
+Define el campo o elemento de control del formulario.
+
+`<footer>`
+		- Usada para contener la parte común del píe de página.
+
+`<nav>`
+		- Usada nuevamente para albergar los enlaces de navegación del píe de página del blog.
+
