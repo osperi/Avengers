@@ -66,6 +66,37 @@ main {
     text-decoration: none;
 }
 
-.main__section-article-content {
+/*.main__section-article-content {
+
+}*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+    .main__section-content {
+        grid-template-areas: "head"
+                           "article1" "article2" "article3"
+                           "article4" "article5" "article6";
+    }
+
+    .main__section-article {
+        border: 1px solid #999;
+        font-size: 2em;
+    }
+
+    .main__section-article-content {
+        font-size: .5em;
+    }
+
+    .main__section-article-header--div-img {
+        height: 100%;
+    }
+
+    .main__section-article-header--img {
+        min-width: 60%;
+        min-height: 90%;
+    }
+}
 
 }

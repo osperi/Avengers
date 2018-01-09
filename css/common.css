@@ -6,7 +6,7 @@
 	Navegación
 */
 .nav{
-	display: flex;		
+	display: flex;
 	flex-direction: row;
 	border: 1px solid #999;
 	padding-left: 40px;
@@ -17,7 +17,6 @@
 	width: 10%;
 	height: 60px;
 	background-color: #ffffff;
-/*	border: 1px solid #999;*/
 	border-left: 1px solid #999;
 	border-right: 1px solid #999;
 	border-top-style: none;
@@ -41,4 +40,19 @@
 .nav__item--a {
 	text-decoration: none;
 	color: #333;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	.nav{
+		flex-direction: column;
+		padding: 40px;
+	}
+	.nav__item{
+		width: 100%;
+		border: 1px solid #999;
+		font-size: 2em;
+		height: 100px;
+	}
 }
