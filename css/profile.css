@@ -1,0 +1,8 @@
+.main__section-content {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.field {
+    position: relative;
+}
