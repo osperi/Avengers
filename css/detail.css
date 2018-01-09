@@ -12,11 +12,6 @@ main {
 		justify-content: center;
 }
 
-figure img{
-	display:block;
-	margin:auto;
-}
-
 .detail__section-title {
     grid-area: head;
     margin-top: 2px;
@@ -26,12 +21,17 @@ figure img{
 .detail__section-article {
  	grid-area: main;
   	border: 1px solid ;
+  	padding-left: 10px;
+  	padding-right: 10px;
 }
-
 
 .detail__article-p{
 	font-size: 12px;
 	color: #fffff ;
 	font-family: verdana;
 	
+}
+
+.detail__section-article-header--nav a {
+    text-decoration: none;
 }
