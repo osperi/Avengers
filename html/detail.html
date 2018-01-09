@@ -12,24 +12,27 @@
 	<!-- Menú principal -->
 	<header id="detailHeader">
 		<!-- Logo en la cabecera -->
-		<a href="main.html"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
-
-		<nav class="header">
-			<a href="profile.html" title="Mi perfil" class="header__item"> Mi perfil </a>
-            <a href="#NewArticle" title="Añadir artículo" class="header__item"> Añadir artículo </a>
-            <a href="#AddImage" title="Añadir imagen" class="header__item"> Añadir imagen </a>
-            <a href="#Games" title="Juegos" class="header__item"> Juegos </a>
-            <a href="#Chat" title="Chat" class="header__item"> Chat </a>
-            <a href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto" class="header__item"> Contacto </a>
- 		</nav>
+		<a href="main.html" title="Simple Blooog UI - Inicio"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
+        
+        <nav>
+			<ul class="nav">
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="profile.html" title="Mi perfil"> Mi perfil </a></li>
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="#NewArticle" title="Añadir artículo"> Añadir artículo </a></li>
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="#AddImage" title="Añadir imagen"> Añadir imagen </a></li>
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Games" title="Juegos"> Juegos </a></li>
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Chat" title="Chat"> Chat </a></li>
+            	<li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+        	</ul>
+        </nav>
 	</header>
 	
+
 	<main id="detailContent"> <!-- Se engloban los elementos principales -->
-		<section id="top6articles">
-        	<h4> Top 6 artículos </h4>
+		<section id="top6articles" class="detail__section-content">
+        	<h4 class="detail__section-title"> Top 6 artículos </h4>
 		
-			<article id="art5Detail" class="articleContent">
-				<header class="article_header">
+			<article id="art5Detail" class="detail__section-article">
+				<header>
 					<figure>
 						<img src="../images/art5detail.png"  alt="Imagen de la protagonista del artículo, la Viuda Negra">			
 					</figure>
@@ -41,28 +44,28 @@
      	 			</aside>	
 				</header>
 				<!-- Título artículo -->
-				<h2 >Viuda Negra</h2>
+				<h2>Viuda Negra</h2>
 				<!-- Texto artículo -->
-				<p class="article_main__p">Natasha es descendiente de los zares rusos. Cuando era una niña fue encontrada por el soldado Ivan Petrovich, quien la cuidó hasta que llegó a la edad adulta. Natasha se convirtió en una famosa bailarina en la Unión Soviética y, más tarde, se casó con Alexi Shostakov. La KGB vio en la pareja una buena posibilidad de tener dos buenos agentes y, mientras Alexi estaba en un viaje de gobierno, se le informó de los planes que el gobierno tenía para él. También se le prohibió tener cualquier tipo de contacto con conocidos, a los cuales se les dijo que este había muerto en una explosión. Tal como el gobierno había anticipado, Natasha quiso hacer algo para honrar la memoria de su esposo; por lo cual fue reclutada para convertirse en espía.</p>
+				<p class="detail__article-p">Natasha es descendiente de los zares rusos. Cuando era una niña fue encontrada por el soldado Ivan Petrovich, quien la cuidó hasta que llegó a la edad adulta. Natasha se convirtió en una famosa bailarina en la Unión Soviética y, más tarde, se casó con Alexi Shostakov. La KGB vio en la pareja una buena posibilidad de tener dos buenos agentes y, mientras Alexi estaba en un viaje de gobierno, se le informó de los planes que el gobierno tenía para él. También se le prohibió tener cualquier tipo de contacto con conocidos, a los cuales se les dijo que este había muerto en una explosión. Tal como el gobierno había anticipado, Natasha quiso hacer algo para honrar la memoria de su esposo; por lo cual fue reclutada para convertirse en espía.</p>
 
-				<p class="article_main__p">Las primeras misiones de Natasha fueron las de infiltrase en las Industrias Stark, pero sus planes fueron repetidamente frustrados por Iron Man. Para su cuarta misión se le dio el alias de la Viuda Negra y ésta buscó el apoyo de otro criminal, Ojo de Halcón, quien se enamoró de ella.</p>
+				<p class="detail__article-p">Las primeras misiones de Natasha fueron las de infiltrase en las Industrias Stark, pero sus planes fueron repetidamente frustrados por Iron Man. Para su cuarta misión se le dio el alias de la Viuda Negra y ésta buscó el apoyo de otro criminal, Ojo de Halcón, quien se enamoró de ella.</p>
 
-				<p class="article_main__p">La Viuda Negra fue secuestrada por agentes de inteligencia chinos, quienes la hipnotizaron y la usaron para atacar a Los Vengadores. Natasha finalmente se liberó del control chino y, tras reunirse con Ojo de Halcón, le reveló su verdadera identidad y ofreció sus servicios a S.H.I.E.L.D.; pues desde que se había enamorado de ella, había dudado en dar su apoyo a los rusos y supo que no funcionaría esta relación.</p>
+				<p class="detail__article-p">La Viuda Negra fue secuestrada por agentes de inteligencia chinos, quienes la hipnotizaron y la usaron para atacar a Los Vengadores. Natasha finalmente se liberó del control chino y, tras reunirse con Ojo de Halcón, le reveló su verdadera identidad y ofreció sus servicios a S.H.I.E.L.D.; pues desde que se había enamorado de ella, había dudado en dar su apoyo a los rusos y supo que no funcionaría esta relación.</p>
 
-				<p class="article_main__p">La Viuda Negra se volvió miembro de Los Vengadores y llegó a convertirse en la líder del equipo. Luego de esto conoció a James Buchanan Barnes (Bucky) e inicio una relación amorosa con él.</p>
+				<p class="detail__article-p">La Viuda Negra se volvió miembro de Los Vengadores y llegó a convertirse en la líder del equipo. Luego de esto conoció a James Buchanan Barnes (Bucky) e inicio una relación amorosa con él.</p>
 			</article>
 		</section>
 	</main>
 	
 	<!-- Pie -->
-	<footer id="detailFooter">
-		<nav class="footer">
-			<a href="main.html" title="Inicio" class="footer__item"> Inicio </a>
-            <a href="#Help" title="Ayuda"  class="footer__item"> Ayuda </a>
-            <a href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"  class="footer__item"> Contacto </a>
-		</nav>
-	</footer>
-    
+    <footer id="detailFooter">
+        <nav>
+            <ul class="nav">
+                <li class="nav__item nav__item--li"><a class="nav__item--a" href="main.html" title="Simple Blooog UI - Inicio"> Inicio </a></li>
+                <li class="nav__item nav__item--li"><a class="nav__item--a" href="#Help" title="Ayuda"> Ayuda </a></li>
+                <li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
-
 </html>
