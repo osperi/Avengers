@@ -1,22 +1,9 @@
-
-main {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-
 .main__section-content {
     display: grid;
     grid-gap: 20px;
     grid-template-areas: "head head head"
                        "article1 article2 article3"
                        "article4 article5 article6";
-}
-
-.main__section-title {
-    grid-area: head;
-    margin-top: 2px;
-    padding-left: 20px;
 }
 
 .main__section-article {
