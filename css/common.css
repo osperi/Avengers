@@ -1,14 +1,11 @@
 /*
-	Flex para la cabecera y el pie
-*/
-
-/*
-	Navegación
+	Archivo de estilos comunes
 */
 
 html  {
 
 }
+
 main {
 	padding-left: 80px;
 	padding-right: 80px;
@@ -89,9 +86,9 @@ header {
 	text-align: left;
 	vertical-align: middle;
 	align-items: center;
-	justify-content: left;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-	align-items: left;
+	align-items: flex-start;
 	display: flex;
 }
 
@@ -120,10 +117,20 @@ and (max-device-width : 480px) {
 		flex-direction: column;
 		padding: 40px;
 	}
+	.nav__footer{
+		flex-direction: column;
+		padding: 40px;
+	}
 	.nav__item{
 		width: 100%;
 		border: 1px solid #999;
 		font-size: 2em;
 		height: 100px;
+	}
+	.nav__footer__item{
+		width: 100%;
+		font-size: 2em;
+		height: 100px;
+		justify-content: center;
 	}
 }

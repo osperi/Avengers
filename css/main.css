@@ -1,3 +1,7 @@
+/*
+    Archivo de estilos específicos del bloque de la página principal
+*/
+
 .main__section-content {
     display: grid;
     grid-gap: 20px;
@@ -84,6 +88,4 @@ and (max-device-width : 480px) {
         min-width: 60%;
         min-height: 90%;
     }
-}
-
 }
