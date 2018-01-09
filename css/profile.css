@@ -1,8 +1,80 @@
 .main__section-content {
-    display: grid;
-    grid-gap: 20px;
+	
 }
 
-.field {
-    position: relative;
+.profile__form {
+	display: grid;
+	padding-top: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+	grid-gap: 10px;
+	grid-auto-columns: 50%;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 2px grey;
+	
+}
+
+.input__field {
+	color: #717171;
+}
+
+.column-left{
+	grid-column: 1;
+}
+.column-right {
+	grid-column: 2;
+}
+
+.field__name {
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.input__text {
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 5px;
+	background: #FBFBFB;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.input__calendar {
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 5px;
+	background: #FBFBFB;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.input__color {
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 5px;
+	background: #FBFBFB;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.btn__save {
+	height: 20px;
+	width: 160px;
+	background-color: #2FC8C8;
+    border: none;
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+	border-radius: 5px;
+}
+
+.btn__cancel {
+	
 }

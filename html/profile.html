@@ -22,45 +22,45 @@
     </header>
     <main id="mainContent">
         <section id="profile" class="main__section-content">
-			<form>
-				<h5 class="main__section-title">Mi Perfil</h3>
-				<div id="pfirstName" class="field">
-					Nombre </br>
-					<input name="firstName" type="text" minlength="10" maxlength="150" required="required"/>
-				</div>
-				<div id="plastName" class="field">
-					Apellidos </br>
-					<input name="lastName" type="text" minlength="10" maxlength="150" required="required"/>
-				</div>
-				<div id="ptelephone" class="field">
-					Teléfono </br>
-					<input name="telephone" type="tel" minlength="9" maxlength="9" required="required"/>
-				</div>
-				<div id="pemail" class="field">
-					Email </br>
-					<input name="email" type="email" required="required"/>
-				</div>
-				<div id="pbirdDate" class="field">
-					Fecha de nacimiento </br>
-					<input name="birdDate" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
-				</div>
-				<div id="pheight" class="field">
-					Altura </br>
-					<input name="height" type="number" min="1" max="3" required="required"/>
-				</div>
-				<div id="pcolor" class="field">
-					Color preferido </br>
-					<input name="color" type="color"/>
-				</div>
-				<div id="pweb" class="field">
-					Web favorita </br>
-					<input name="web" type="url" required="required"/>
-				</div>
-				<div id="pactions">
-					<input type="submit" value="Guardar">
-					<input type="submit" value="Cancelar">
-				</div>
-			</form>
+			<h5 class="main__section-title">Mi Perfil</h5>
+				<form class="profile__form">
+					<div id="pfirstName" class="input__field column-left">
+						<div class="field__name">Nombre</div>
+						<input name="firstName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+					</div>
+					<div id="plastName" class="input__field column-right">
+						<div class="field__name">Apellidos</div>
+						<input name="lastName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+					</div>
+					<div id="ptelephone" class="input__field column-left">
+						<div class="field__name">Teléfono</div>
+						<input name="telephone" class="input__text" type="tel" minlength="9" maxlength="9" required="required"/>
+					</div>
+					<div id="pemail" class="input__field column-right">
+						<div class="field__name">Email</div>
+						<input name="email" class="input__text" type="email" required="required"/>
+					</div>
+					<div id="pbirdDate" class="input__field column-left">
+						<div class="field__name">Fecha de nacimiento</div>
+						<input name="birdDate" class="input__calendar" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
+					</div>
+					<div id="pheight" class="input__field column-right">
+						<div class="field__name">Altura</div>
+						<input name="height" class="input__text" type="number" min="1" max="3" required="required"/>
+					</div>
+					<div id="pcolor" class="input__field column-left">
+						<div class="field__name">Color preferido</div>
+						<input name="color" class="input__color" type="color"/>
+					</div>
+					<div id="pweb" class="input__field column-right">
+						<div class="field__name">Web favorita</div>
+						<input name="web" class="input__text" type="url" required="required"/>
+					</div>
+					<div id="pactions">
+						<input type="submit" class="btn__save" value="Guardar">
+						<input type="submit" class="btn__cancel" value="Cancelar">
+					</div>
+				</form>
 		</section>
     </main>
 	<footer id="mainFooter">
