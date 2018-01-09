@@ -1,0 +1,40 @@
+.articleContent{
+	display: grid;
+	/**
+	 * Aqui definimos las áreas que va a tener nuestro grid
+	 * En este caso estoy definiendo un grid de 3 columnas por 3 filas
+	 */
+	grid-template-areas: "head"
+                       "main";
+
+	background-color: #ffffff;
+	border: 1px solid #999;
+	width: 1000px;
+	margin: 20px auto;	
+	position: relative;
+}
+
+}
+
+/**/
+
+.article_header
+{
+	grid-area: head;
+	background-color: #c3d565
+}
+
+.article_main
+{
+	grid-area: main;
+	width: 90%;
+	background-color: #c3d0d4
+}
+
+.article_main__p{
+	font-size: 12px;
+	color: #fffff ;
+	font-family: verdana;
+}
+
+
