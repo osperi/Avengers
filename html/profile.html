@@ -5,8 +5,11 @@
 	<title>Simple Blooog UI</title>
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/profile.css">
+
+    <script type="text/javascript" src="../js/localStorage.js"></script>
+	<script type="text/javascript" src="../js/camera.js"></script>
 </head>
-<body>
+<body onload="loadInit();">
 	<header id="mainHeader">
 		<div class="banner">
 			<a href="main.html"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
@@ -26,38 +29,44 @@
 			<form class="profile__form">
 				<div id="pfirstName" class="input__field column-left">
 					<div class="field__name">Nombre</div>
-					<input name="firstName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+					<input id="idFirstName" name="firstName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
 				</div>
 				<div id="plastName" class="input__field column-right">
 					<div class="field__name">Apellidos</div>
-					<input name="lastName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+					<input id="idLastName" name="lastName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
 				</div>
 				<div id="ptelephone" class="input__field column-left">
 					<div class="field__name">Teléfono</div>
-					<input name="telephone" class="input__text" type="tel" minlength="9" maxlength="9" required="required"/>
+					<input id="idTelephone" name="telephone" class="input__text" type="tel" minlength="9" maxlength="9" required="required"/>
 				</div>
 				<div id="pemail" class="input__field column-right">
 					<div class="field__name">Email</div>
-					<input name="email" class="input__text" type="email" required="required"/>
+					<input id="idEmail" name="email" class="input__text" type="email" required="required"/>
 				</div>
 				<div id="pbirdDate" class="input__field column-left">
 					<div class="field__name">Fecha de nacimiento</div>
-					<input name="birdDate" class="input__calendar" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
+					<input id="idBirdDate" name="birdDate" class="input__calendar" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
 				</div>
 				<div id="pheight" class="input__field column-right">
 					<div class="field__name">Altura</div>
-					<input name="height" class="input__number" type="number" min="1" max="3" required="required"/>
+					<input id="idHeight" name="height" class="input__number" type="number" min="1" max="3" required="required"/>
 				</div>
 				<div id="pcolor" class="input__field column-left">
 					<div class="field__name">Color preferido</div>
-					<input name="color" class="input__color" type="color" value="#ff9494"/>
+					<input id="idColor" name="color" class="input__color" type="color" value="#ff9494"/>
 				</div>
 				<div id="pweb" class="input__field column-right">
 					<div class="field__name">Web favorita</div>
-					<input name="web" class="input__text" type="url" required="required"/>
+					<input id="idWeb" name="web" class="input__text" type="url" required="required"/>
 				</div>
+                <div id="ppersonalImage" class="input__field column-left">
+                    <div class="field__name"> Imagen personal </div>
+                    <input class="btn__photo" type="file" name="photo" accept="image/*" capture onchange="savePhoto(this)" />
+                </div>
+                <div id="ppersonalImageShow" class="input__field column-right">
+                </div>
 				<div id="pactions" class="form__buttons">
-					<input type="submit" class="btn__save" value="Guardar">
+					<input type="submit" class="btn__save" value="Guardar" onclick="saveProfile();">
 					<input type="submit" class="btn__cancel" value="Cancelar">
 				</div>
 			</form>
