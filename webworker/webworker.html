@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  Valor:<input type="text" id="value">
+  <br/><br/>
+  <button id="startButton" onclick="sendMessage()">Start</button>
+  <br/><br/>
+  Total:<input type="text" id="result">
+  <script src="webworker.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script>
+    var myWorker = new Worker('webworker.js');
+    myWorker.onmessage = function (e) {
+      console.log("Mensaje recibido: ", e.data);
+      var total = e.data.total;
+      document.getElementById("result").value = total;
+      document.getElementById("startButton").disabled = false;
+    }
+    function sendMessage() {
+      document.getElementById("result").value = "Calculando ...";
+      var num = document.getElementById("value").value;
+      myWorker.postMessage({num: num});
+      document.getElementById("startButton").disabled = true;
+    }
+  </script>
+</body>
+</html>
