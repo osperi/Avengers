@@ -5,6 +5,7 @@
 	<title>Simple Blooog UI</title>
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/profile.css">
+	<script src="../javascript/camera.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<header id="mainHeader">
@@ -55,6 +56,12 @@
 				<div id="pweb" class="input__field column-right">
 					<div class="field__name">Web favorita</div>
 					<input name="web" class="input__text" type="url" required="required"/>
+				</div>
+				<div id="ppersonalImage" class="input__field column-left">
+					<div class="field__name"> Imagen personal </div>
+					<input class="btn__photo" type="file" name="photo" accept="image/*" capture onchange="savePhoto(this)" />
+				</div>
+				<div id="ppersonalImageShow" class="input__field column-right">
 				</div>
 				<div id="pactions" class="form__buttons">
 					<input type="submit" class="btn__save" value="Guardar">
