@@ -120,8 +120,8 @@
 .img__personal {
     min-width: 60%;
     min-height: 90%;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 200%;
+    max-height: 200%;
 }
 
 .btn__save {
