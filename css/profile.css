@@ -1,8 +1,137 @@
 .main__section-content {
-    display: grid;
-    grid-gap: 20px;
+	
 }
 
-.field {
-    position: relative;
+.profile__form {
+	display: grid;
+	padding-top: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+	grid-gap: 10px;
+	grid-auto-columns: 50%;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 2px #EFEFEF;
+}
+
+.input__field {
+	color: #717171;
+}
+
+.column-left{
+	grid-column: 1;
+}
+.column-right {
+	grid-column: 2;
+}
+
+.field__name {
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.input__text {
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 3px;
+	background: #FBFBFB;
+	border: 1px solid #AAAAAA;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.input__text:focus:invalid {
+	background: #ff9494;
+	border: 1px solid #FF0000;
+}
+
+.input__text:valid {
+	background: #dffbc7;
+	border: 1px solid #399005;
+}
+
+.input__number {
+	-moz-appearance: textfield; /* Para eliminar los controles de spinner */
+	-webkit-appearance: textfield; /* Para eliminar los controles de spinner */
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 3px;
+	background: #FBFBFB;
+	border: 1px solid #AAAAAA;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.input__number:focus:invalid {
+	background: #ff9494;
+	border: 1px solid #FF0000;
+}
+
+.input__number:valid {
+	background: #dffbc7;
+	border: 1px solid #399005;
+}
+
+.input__calendar {
+	height: 20px;
+	width: 250px;
+	border: 0;
+	border-radius: 3px;
+	background: #FBFBFB;
+	border: 1px solid #AAAAAA;
+	max-width: 100%;
+	padding: 10px 8px;
+	content: attr(placeholder);
+}
+
+.input__color {
+	height: 50px;
+	width: 150px;
+	border: 0;
+	border-radius: 3px;
+	background: #FBFBFB;
+	border: 1px solid #AAAAAA;
+	max-width: 100%;
+	padding: 10px 8px;
+}
+
+.form__buttons {
+	padding: 30px 0px;
+}
+
+.btn__save {
+	height: 40px;
+	width: 100px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #34a9f3;
+	color: #FBFBFB;
+	border-radius: 5px;
+	border: 0;
+}
+
+.btn__save:hover {
+	background-color: #FFFFFF;
+	color: #34a9f3;
+	border: 1px solid #34a9f3;
+}
+
+.btn__cancel {
+	height: 40px;
+	width: 100px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #717171;
+	border-radius: 5px;
+	border: 1px solid #717171;
+}
+
+.btn__cancel:hover {
+	background-color: #ff9494;
+	color: #FBFBFB;
+	border-radius: 5px;
+	border: 0;
 }
