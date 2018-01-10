@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Blooog UI</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/profile.css">
-    <script src="../javascript/camera.js" type="text/javascript" charset="utf-8" async defer></script>
+	<meta charset="UTF-8">
+	<title>Simple Blooog UI</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/profile.css">
+
+	<script type="text/javascript" src="../js/localStorage.js"></script>
 </head>
-<body>
-    <header id="mainHeader">
-        <div class="banner">
-            <a href="main.html"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
-        </div>
-        <ul class="nav">
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="profile.html" title="Mi perfil"> Mi perfil </a></li>
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="#NewArticle" title="AÃ±adir artÃ­culo"> AÃ±adir artÃ­culo </a></li>
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="#AddImage" title="AÃ±adir imagen"> AÃ±adir imagen </a></li>
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="#Games" title="Juegos"> Juegos </a></li>
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="#Chat" title="Chat"> Chat </a></li>
-            <li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
-        </ul>
-    </header>
-    <main id="mainContent">
-        <section id="profile" class="main__section-content">
-            <h5 class="main__section-title">Mi Perfil</h5>
-            <form class="profile__form">
-                <div id="pfirstName" class="input__field column-left">
-                    <div class="field__name">Nombre</div>
-                    <input name="firstName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
-                </div>
-                <div id="plastName" class="input__field column-right">
-                    <div class="field__name">Apellidos</div>
-                    <input name="lastName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
-                </div>
-                <div id="ptelephone" class="input__field column-left">
-                    <div class="field__name">TelÃ©fono</div>
-                    <input name="telephone" class="input__text" type="tel" minlength="9" maxlength="9" required="required"/>
-                </div>
-                <div id="pemail" class="input__field column-right">
-                    <div class="field__name">Email</div>
-                    <input name="email" class="input__text" type="email" required="required"/>
-                </div>
-                <div id="pbirdDate" class="input__field column-left">
-                    <div class="field__name">Fecha de nacimiento</div>
-                    <input name="birdDate" class="input__calendar" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
-                </div>
-                <div id="pheight" class="input__field column-right">
-                    <div class="field__name">Altura</div>
-                    <input name="height" class="input__number" type="number" min="1" max="3" required="required"/>
-                </div>
-                <div id="pcolor" class="input__field column-left">
-                    <div class="field__name">Color preferido</div>
-                    <input name="color" class="input__color" type="color" value="#ff9494"/>
-                </div>
-                <div id="pweb" class="input__field column-right">
-                    <div class="field__name">Web favorita</div>
-                    <input name="web" class="input__text" type="url" required="required"/>
-                </div>
+<body onload="loadInit();">
+	<header id="mainHeader">
+		<div class="banner">
+			<a href="main.html"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
+		</div>
+		<ul class="nav">
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="profile.html" title="Mi perfil"> Mi perfil </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#NewArticle" title="Añadir artículo"> Añadir artículo </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#AddImage" title="Añadir imagen"> Añadir imagen </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Games" title="Juegos"> Juegos </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Chat" title="Chat"> Chat </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+		</ul>
+	</header>
+	<main id="mainContent">
+		<section id="profile" class="main__section-content">
+			<h5 class="main__section-title">Mi Perfil</h5>
+			<form class="profile__form">
+				<div id="pfirstName" class="input__field column-left">
+					<div class="field__name">Nombre</div>
+					<input id="idFirstName" name="firstName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+				</div>
+				<div id="plastName" class="input__field column-right">
+					<div class="field__name">Apellidos</div>
+					<input id="idLastName" name="lastName" class="input__text" type="text" minlength="10" maxlength="150" required="required"/>
+				</div>
+				<div id="ptelephone" class="input__field column-left">
+					<div class="field__name">Teléfono</div>
+					<input id="idTelephone" name="telephone" class="input__text" type="tel" minlength="9" maxlength="9" required="required"/>
+				</div>
+				<div id="pemail" class="input__field column-right">
+					<div class="field__name">Email</div>
+					<input id="idEmail" name="email" class="input__text" type="email" required="required"/>
+				</div>
+				<div id="pbirdDate" class="input__field column-left">
+					<div class="field__name">Fecha de nacimiento</div>
+					<input id="idBirdDate" name="birdDate" class="input__calendar" type="date" min="1900-01-01" max="2018-01-01" required="required"/>
+				</div>
+				<div id="pheight" class="input__field column-right">
+					<div class="field__name">Altura</div>
+					<input id="idHeight" name="height" class="input__number" type="number" min="1" max="3" required="required"/>
+				</div>
+				<div id="pcolor" class="input__field column-left">
+					<div class="field__name">Color preferido</div>
+					<input id="idColor" name="color" class="input__color" type="color" value="#ff9494"/>
+				</div>
+				<div id="pweb" class="input__field column-right">
+					<div class="field__name">Web favorita</div>
+					<input id="idWeb" name="web" class="input__text" type="url" required="required"/>
+				</div>
                 <div id="ppersonalImage" class="input__field column-left">
                     <div class="field__name"> Imagen personal </div>
                     <input class="btn__photo" type="file" name="photo" accept="image/*" capture onchange="savePhoto(this)" />
                 </div>
                 <div id="ppersonalImageShow" class="input__field column-right">
                 </div>
-                <div id="pactions" class="form__buttons">
-                    <input type="submit" class="btn__save" value="Guardar">
-                    <input type="submit" class="btn__cancel" value="Cancelar">
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer id="mainFooter">
-        <nav>
-            <ul class="nav__footer">
-                <li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="main.html" title="Simple Blooog UI - Inicio"> Inicio </a></li>
-                <li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="#Help" title="Ayuda"> Ayuda </a></li>
-                <li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
-            </ul>
-        </nav>
-    </footer>
+				<div id="pactions" class="form__buttons">
+					<input type="submit" class="btn__save" value="Guardar" onclick="saveProfile();">
+					<input type="submit" class="btn__cancel" value="Cancelar">
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer id="mainFooter">
+		<nav>
+			<ul class="nav__footer">
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="main.html" title="Simple Blooog UI - Inicio"> Inicio </a></li>
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="#Help" title="Ayuda"> Ayuda </a></li>
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+			</ul>
+		</nav>
+	</footer>
 </body>
 </html>
