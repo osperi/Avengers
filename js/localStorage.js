@@ -13,7 +13,7 @@ function loadInit () {
 	//alert('loadInit');                         
 
 	if(isStorage()) {
-		console.log("LocalStorage disponible");
+		console.log("loadInit: LocalStorage disponible");
 
    		//Se leen los datos almacenados en el localStorage
     	var nombre = localStorage.getItem("Nombre");
@@ -28,9 +28,12 @@ function loadInit () {
  		if((nombre == null || nombre == '') || (apellido == null || apellido == '')  ||  (telefono == null || telefono == '')  ||
 			(email == null || email == '')  || 	(fecNac == null || fecNac == '')  || (altura == null || altura == '')  || 
 			(color == null || color == '')  || 	(web == null || web == '')) {
-    		console.log("No hay datos!");
+
+    		console.log("loadInit: No hay datos!");
+
     	} else {
-    		console.log("Cargamos los datos");
+
+    		console.log("loadInit: Se cargan los datos existentes en loadStorage");
 
         	//Se muestran los datos en el formulario              
         	document.getElementById("idFirstName").value = nombre;
@@ -43,12 +46,13 @@ function loadInit () {
 			document.getElementById("idWeb").value = web;
     	}
 	} else {
-		console.log("LocalStorage no soportado en este navegador");
+		console.log("loadInit: LocalStorage no soportado en este navegador");
 	}
 }
 
 
 function saveProfile () {
+
 	 /*Captura de datos escrito en los inputs*/        
 	var name = document.getElementById("idFirstName").value;
 	var lastName = document.getElementById("idLastName").value;
@@ -59,18 +63,26 @@ function saveProfile () {
 	var color = document.getElementById("idColor").value;
 	var web = document.getElementById("idWeb").value;
 
-   	console.log("Datos leídos del formulario");
-   	
-    //Guardando los datos en el LocalStorage
-    localStorage.setItem("Nombre", name);
-    localStorage.setItem("Apellido", lastName);
-    localStorage.setItem("Telefono", telephone);
-    localStorage.setItem("Email", email);
-    localStorage.setItem("Fecha_Nac", birdDate);
-    localStorage.setItem("Altura", height);
-    localStorage.setItem("Color", color);
-    localStorage.setItem("Web", web);
+   	try {
 
-    console.log("Datos Guardados correctamente");
+   		if(isStorage()) {
+   			//Guardando los datos en el LocalStorage
+    		localStorage.setItem("Nombre", name);
+    		localStorage.setItem("Apellido", lastName);
+    		localStorage.setItem("Telefono", telephone);
+    		localStorage.setItem("Email", email);
+    		localStorage.setItem("Fecha_Nac", birdDate);
+    		localStorage.setItem("Altura", height);
+    		localStorage.setItem("Color", color);
+    		localStorage.setItem("Web", web);
+
+    		console.log("saveProfile: Datos Guardados correctamente");
+    	} else {
+			console.log("saveProfile: Datos No Guardados en localStorage");    		
+    	}
+	} catch (e) {
+		 console.log("saveProfile: Los datos no se han guardado correctamente. ERROR: " + e.description);
+	}
+
  }
 
