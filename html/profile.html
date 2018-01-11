@@ -8,6 +8,7 @@
 
     <script type="text/javascript" src="../js/localStorage.js"></script>
 	<script type="text/javascript" src="../js/camera.js"></script>
+	<script type="text/javascript" src="../js/connection.js"></script>
 </head>
 <body onload="loadInit();">
 	<header id="mainHeader">
@@ -20,7 +21,9 @@
 			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#AddImage" title="Añadir imagen"> Añadir imagen </a></li>
 			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Games" title="Juegos"> Juegos </a></li>
 			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Chat" title="Chat"> Chat </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="map.html" title="Mi perfil"> Dónde estamos </a></li>
 			<li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+			<li id="status" class="nav__item nav__item--li--last"><script>updateStatus()</script></li>
 		</ul>
 	</header>
 	<main id="mainContent">

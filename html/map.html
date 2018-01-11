@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Blooog UI</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/map.css">
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/connection.js"></script>
+</head>
+<body>
+	<header id="mainHeader">
+		<div class="banner">
+			<a href="main.html"><img src="../images/logo_mini.png" alt="Logo Simple Blooog"></a>
+		</div>
+		<ul class="nav">
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="profile.html" title="Mi perfil"> Mi perfil </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#NewArticle" title="Añadir artículo"> Añadir artículo </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#AddImage" title="Añadir imagen"> Añadir imagen </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Games" title="Juegos"> Juegos </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="#Chat" title="Chat"> Chat </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="map.html" title="Mi perfil"> Dónde estamos </a></li>
+			<li class="nav__item nav__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+			<li id="status" class="nav__item nav__item--li"><script>updateStatus()</script></li>
+		</ul>
+	</header>
+	<main id="mainContent">
+		<section id="profile" class="main__section-content">
+			<h5 class="main__section-title">Dónde estamos</h5>
+			<div id="map"/>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqbuMrfOdwSHTT3UI01nHwiXQLUSswdsc&callback=initMap">
+			</script>
+		</section>
+	</main>
+	<footer id="mainFooter">
+		<nav>
+			<ul class="nav__footer">
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="main.html" title="Simple Blooog UI - Inicio"> Inicio </a></li>
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="#Help" title="Ayuda"> Ayuda </a></li>
+				<li class="nav__footer__item nav__footer__item--li"><a class="nav__item--a" href="mailto:avengers@example.com?subject=feedbackSimpleBlooog" title="Contacto"> Contacto </a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>
