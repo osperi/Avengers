@@ -136,3 +136,9 @@ and (max-device-width : 480px) {
 		justify-content: center;
 	}
 }
+
+.img__status{
+	padding-right: 5px; 	
+	height: 12px;
+	width: 12px;
+}
